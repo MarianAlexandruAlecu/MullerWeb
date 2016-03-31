@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 /**
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
@@ -5,12 +6,40 @@
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+$text-color: #fff;
+$text-color-2: #000;
+$orange: rgb(239, 67, 55);
+
+@mixin orange-bg($opacity) {
+    background-color: rgba(239, 67, 55, $opacity);
+}
+
+$gray: #818080;
+$light-gray: #d5d5d5;
+$light-gray-2: #f4f4f4;
+$red: #d50000;
+$blue: #3743ef;
+
+@mixin background-gradient-horizontal($from, $to) {
+    background: $from;
+    background: -moz-linear-gradient(left, $from 0%, $to 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $from), color-stop(100%, $to));
+    background: -webkit-linear-gradient(left, $from 0%, $to 100%);
+    background: -o-linear-gradient(left, $from 0%, $to 100%);
+    background: -ms-linear-gradient(left, $from 0%, $to 100%);
+    background: linear-gradient(to right, $from 0%, $to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="'"+$from+"'", endColorstr="'"+$to+"'", GradientType=1 );
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
  */
 // bower:scss
 // endbower
+
+$screen-fhd: 1750px;
+$container-fhd: $screen-fhd - $grid-gutter-width;
 
 .browsehappy {
   margin: 0.2em 0;
@@ -25,6 +54,17 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
   img.pull-right {
     width: 50px;
   }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: $screen-fhd) {
+    
+    .container {
+        width: $container-fhd;
+    }
 }
 
 /**

@@ -3,10 +3,10 @@
 
   angular
     .module('creative')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('navbarTop', navbarTop);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function navbarTop() {
     var directive = {
       restrict: 'E',
       templateUrl: 'app/components/navbar/navbar.html',
