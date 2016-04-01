@@ -245,4 +245,63 @@
       letter-spacing: .5rem;
     }
   }
+
+
+  &::after {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 110px;
+    background-image: url('../assets/images/red-dot.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -.5rem;
+    left: calc(50% - 55px);
+  }
+}
+
+.hm-seventh-slide {
+  margin-top: -11rem;
+  padding: 11rem 0 37rem;
+  background-image: url('../assets/images/locations.png');
+  background-size: cover;
+  z-index: 1;
+
+  .title {
+    margin: 8rem 0 7rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .our-work {
+
+    .work {
+      margin: 9rem 0;
+
+      p {
+        font-size: 4.8rem;
+        font-weight: bold;
+        margin-bottom: -1rem;
+      }
+
+      span {
+        font-size: 3rem;
+        font-weight: lighter;
+      }
+    }
+
+    .right-side {
+      padding-top: 6rem;
+
+      img {
+        display: block;
+        margin: 7rem 0;
+      }
+    }
+  }
 }
