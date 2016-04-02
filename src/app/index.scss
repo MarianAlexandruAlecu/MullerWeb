@@ -18,7 +18,9 @@ $orange: rgb(239, 67, 55);
 $gray: #818080;
 $light-gray: #d5d5d5;
 $light-gray-2: #f4f4f4;
+$light-gray-3: #f8f8f8;
 $red: #d50000;
+$light-red: #ef4337;
 $blue: #3743ef;
 
 @mixin background-gradient-horizontal($from, $to) {
@@ -85,6 +87,11 @@ body {
 .flex-center {
   display: flex;
   justify-content: space-around;
+}
+
+.flex-middle {
+  display: flex;
+  align-items: center;
 }
 
 /**

@@ -22,8 +22,7 @@
     &.btn-default {
         border: 2px solid $orange;
         color: $orange;
-        width: 170px;
-        @include orange-bg(.07);
+        width: 17rem;
         
         &:hover {
             @include color-border($blue);

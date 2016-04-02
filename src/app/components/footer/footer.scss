@@ -1,0 +1,51 @@
+.footer-bottom {
+  position: relative;
+  z-index: -1;
+  margin-top: -11rem;
+  padding: 8rem 0 5rem;
+  background: $text-color;
+  color: $text-color-2;
+  overflow: hidden;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 59%;
+    height: 300%;
+    right: -20%;
+    top: 0;
+    background: $orange;
+    transform: rotate(48deg);
+    z-index: -1;
+  }
+
+  .flex-middle {
+    height: 14rem;
+    margin-top: 5rem;
+  }
+
+  .logo-footer {
+    margin-top: 5rem;
+
+    div {
+      margin-top: 3rem;
+
+      img {
+        margin: 0 .3rem;
+      }
+    }
+  }
+
+  .address {
+    color: $text-color;
+    font-weight: bold;
+
+    .info {
+      font-weight: lighter;
+      margin-top: 3rem;
+    }
+  }
+}
