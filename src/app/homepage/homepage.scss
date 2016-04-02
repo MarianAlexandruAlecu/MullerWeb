@@ -323,16 +323,19 @@
 
   .text-bold {
     text-transform: uppercase;
-    font-size: 300%;
+    font-size: 5rem;
     font-weight: bold;
+    margin-bottom: 0;
   }
 
   .text-tiny {
     text-transform: uppercase;
-    font-size: 100%;
+    font-size: 1.7rem;
     letter-spacing: 0.6rem;
-    opacity: 0.7;
+    opacity: 0.8;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .text-signature {
@@ -342,7 +345,7 @@
 
   .align-center {
     display: flex;
-    height: 50%;
+    height: 60%;
     width: 100%;
     resize: vertical;
     flex-direction: column;
@@ -352,12 +355,11 @@
   }
 
   .align-bottom-left {
-    padding-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 50%;
+    height: 40%;
     width: 100%;
   }
 
@@ -366,6 +368,11 @@
     background-size: 100% 100%;
     height: 45.43%;
     width: 40%;
+
+    .align-bottom-left {
+      padding-left: 2.5%;
+      padding-bottom: 2.5%;
+    }
 
   }
 
@@ -382,6 +389,14 @@
     height: 22.72%;
     width: 40%;
 
+    .text-tiny {
+      letter-spacing: 0.25rem;
+    }
+
+    .align-bottom-left {
+      padding-left: 4.5%;
+      padding-bottom: 2.5%;
+    }
   }
 
   .bg-4 {
@@ -391,7 +406,13 @@
     width: 40%;
 
     .text-tiny {
-      font-size: 90%;
+      font-size: 1.6rem ;
+      letter-spacing: 0.07rem;
+    }
+
+    .align-bottom-left {
+      padding-left: 4.5%;
+      padding-bottom: 5%;
     }
 
   }
@@ -410,15 +431,21 @@
     width: 20%;
 
     .text-bold {
-      font-size: 200%;
+      font-size: 2.5rem;
     }
 
     .text-tiny {
-      font-size: 90%;
+      letter-spacing: 0.7rem;
+    }
+
+    .align-center {
+      height: 47%;
     }
 
     .align-bottom-left {
-      padding-bottom: 18%;
+      height: 53%;
+      padding-left: 7%;
+      padding-bottom: 31.5%;
     }
   }
 
@@ -436,12 +463,17 @@
     width: 20%;
 
     .text-bold {
-      font-size: 200%;
+      font-size: 2.3rem;
     }
 
     .text-tiny {
-      font-size: 80%;
-      letter-spacing: 0.4rem;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .align-bottom-left {
+      padding-left: 6.5%;
+      padding-bottom: 6.5%;
     }
   }
 
@@ -450,6 +482,20 @@
     background-size: 100% 100%;
     height: 22.72%;
     width: 40%;
+
+      .text-bold {
+        font-size: 3.5rem;
+      }
+
+      .text-tiny {
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+      }
+
+    .align-bottom-left {
+      padding-left: 5.5%;
+      padding-bottom: 3.5%;
+    }
   }
 
   .bg-10 {
@@ -458,8 +504,25 @@
     height: 29.848%;
     width: 20%;
 
+    .align-center {
+      height: 50%;
+    }
+
     .align-bottom-left {
-      padding-bottom: 10%;
+      height: 50%;
+      padding-left: 7%;
+      padding-bottom: 26%;
+
+    }
+
+    .text-bold {
+      font-size: 1.8rem;
+    }
+
+    .text-tiny {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+
     }
   }
 
@@ -469,8 +532,26 @@
     height: 28.47%;
     width: 60%;
 
+    .text-bold {
+      margin: 0;
+      padding: 0;
+      font-size: 3.2rem;
+      letter-spacing: 0.01rem;
+    }
+    .text-tiny {
+      margin: 0;
+      letter-spacing: 0.57rem;
+      font-size: 1.5rem;
+    }
+
+    .align-center {
+      height: 48%;
+    }
+
     .align-bottom-left {
-      padding-bottom: 5%;
+      height: 53%;
+      padding-left: 4%;
+      padding-bottom: 7.05%;
     }
   }
 
