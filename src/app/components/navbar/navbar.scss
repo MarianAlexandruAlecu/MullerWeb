@@ -1,18 +1,22 @@
 .navbar-top {
-    background: none;
-    border: none;
-    padding-top: 8rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-    
+  background: none;
+  border: none;
+  padding-top: 8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  &.navbar-default {
+
     .navbar-toggle {
-        border: none;
-        
-        .icon-bar {
-            background-color: $text-color;
-        }
+      border: none;
+      background: none;
+
+      .icon-bar {
+        background-color: $text-color;
+      }
     }
+  }
 }
