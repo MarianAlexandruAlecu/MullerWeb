@@ -25,6 +25,17 @@
   .graph {
     width: 100%;
   }
+  
+  #graph-container {
+    overflow: hidden;
+    
+    svg {
+      width: 1000px;
+      // position: relative;
+      margin-top: -100px;
+      margin-left: -100px;
+    }
+  }
 
   h1 {
     font-size: 5rem;

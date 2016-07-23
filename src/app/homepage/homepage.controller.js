@@ -16,12 +16,45 @@
             $log.debug(NAME, 'Init');
         }
 
+        vm.animateGraph = function () {
+
+            jQuery(function ($) {
+                
+                $('#graph-container').html('');
+                
+                new Vivus("graph-container", {
+                    duration: 500,
+                    file: "assets/chart.svg"
+                });
+            });
+        }
+
         vm.animateMap = function () {
+
+            console.debug(this.NAME, 'Init animateMap');
 
             jQuery(function ($) {
 
-                pointsPosition();
-                animateWork();
+                var mapTop = $('.hm-seventh-slide').offset().top;
+                var mapHeight = $('.hm-seventh-slide').height();
+                var screenHeight = $(window).height();
+                var started = false;
+
+                $(window).scroll(function () {
+
+                    if (!started && mapTop + mapHeight < screenHeight + $(window).scrollTop()) {
+                        started = true;
+
+                        setTimeout(function () {
+                            console.debug(this.NAME, 'Start animateMap');
+                            pointsPosition();
+                            animateWork();
+                        }, 1000);
+                    }
+                });
+
+                //pointsPosition();
+                //animateWork();
 
                 function animateWork() {
 
@@ -58,7 +91,7 @@
 
                     $('.map-point').each(function () {
                         var left = parseInt($(this).attr('data-left')) - 35;
-                        var top = parseInt($(this).attr('data-top')) + 92;
+                        var top = parseInt($(this).attr('data-top')) + 92 - 7;
 
                         $(this).attr({
                             'data-left': left,
@@ -67,6 +100,14 @@
 
                         $(this).css('left', left);
                     });
+
+                    /*console.debug('Init add');
+                    
+                    var gwdAd = document.getElementById('gwd-ad');
+                    
+                    setTimeout(function() {
+                        gwdAd.initAd();
+                        }, 0);*/
                 }
 
                 function animatePoint() {
@@ -82,6 +123,8 @@
         };
 
         vm.animateSkills = function () {
+
+            console.debug(this.NAME, 'Init animateSkills');
 
             var speed = 1;
             var limit = 30;
